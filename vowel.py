@@ -41,7 +41,16 @@ def anti_vowel(text):
 
 print(anti_vowel('gfdoELOAxhU'))
 
+def anti_vowel(text):
+  return text.replace('a', '').replace('e', '').replace('i', '').replace('o', '').replace('u', '').replace('A', '').replace('E', '').replace('I', '').replace('O', '').replace('U', '')
 
+
+print(anti_vowel('fsdfoEAffoi'))
+
+def anti_vowel(text):
+  return ''.join([char for char in text if char not in ('aeiouAEIOU')])
+
+print(anti_vowel('fsnjkoAEObjsfdoO'))
 
 
 

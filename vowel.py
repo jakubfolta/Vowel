@@ -5,7 +5,7 @@ def anti_vowel(text):
   return (text)
 
 
-print (anti_vowel('AbeCadlo'))
+print(anti_vowel('AbeCadlo'))
 
 
 def anti_vowel(text):
@@ -15,5 +15,67 @@ def anti_vowel(text):
   return (text)
 
 
-print (anti_vowel('AbeCadlo'))
+print(anti_vowel('AbeCadlo'))
+
+
+
+def anti_vowel(characters):
+  vow = 'aeiouAEIOU'
+  for evrchar in vow:
+    if evrchar in characters:
+      characters = characters.replace(evrchar, '')
+  return characters
+
+
+print(anti_vowel('hkfsOEgiobmlaE'))
+
+def anti_vowel(text):
+  word = '' #variable for vowels 
+  for char in text:
+    if char in ('aeiouAEIOU'):
+      word += char
+      text = text.replace(char, '')
+  print (word)
+  return text
+
+
+print(anti_vowel('gfdoELOAxhU'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  

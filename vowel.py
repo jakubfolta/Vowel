@@ -48,12 +48,19 @@ def anti_vowel(text):
 print(anti_vowel('fsdfoEAffoi'))
 
 def anti_vowel(text):
-  return ''.join([char for char in text if char not in ('aeiouAEIOU')])
+  return ''.join(char for char in text if char not in ('aeiouAEIOU'))
 
 print(anti_vowel('fsnjkoAEObjsfdoO'))
 
 
-
+def anti_vowel(text):
+  result = list(text)
+  for l in result :
+      if l in "AEIOUaeiou":
+        result.remove(l)
+  return ''.join(result)
+  
+print (anti_vowel("ecureuil"))
 
 
 

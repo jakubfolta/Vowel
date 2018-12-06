@@ -23,7 +23,7 @@ def anti_vowel(characters):
   vow = 'aeiouAEIOU'
   for evrchar in vow:
     if evrchar in characters:
-      characters = characters.replace(evrchar, '')
+      characters = characters.replace(evrchar, ' ')
   return characters
 
 

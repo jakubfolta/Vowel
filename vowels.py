@@ -8,7 +8,7 @@ def get_vowels(text):
 print(get_vowels('abedeOSUkil'))
 
 
-def anty_vowels(letters):
+def noVowels(letters):
   sec_letters = list(letters)
   vowels = 'aeiouAEIOU'
   for character in letters:
@@ -16,10 +16,10 @@ def anty_vowels(letters):
       sec_letters.remove(character)
   return ''.join(sec_letters)
 
-print(anty_vowels('abdeOUghtjuel'))
+print(noVowels('abdeOUghtjuel'))
 
 
-def antVowels(text):
+def noVowels(text):
   return text.replace('a', '').replace('e', '').replace('i', '').replace('o', '').replace('u', '').replace('A', '').replace('E', '').replace('I', '').replace('O', '').replace('U', '')
 
-print(antVowels('adeloUOFgEb'))
+print(noVowels('adeloUOFgEb'))

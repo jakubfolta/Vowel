@@ -1,11 +1,11 @@
-def ant_vowel(text):
+def anty_vowel(text):
   vowels = 'aeiouAEIOU'
   for char in vowels:
     if char in text:
       text = text.replace(char, '')
   return text
 
-print(ant_vowel('abeeeOIFREdhtuuiyuikfl'))
+print(anty_vowel('abeeeOIFREdhtuuiyuikfl'))
 
 
 def antvowel(letters):

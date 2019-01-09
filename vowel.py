@@ -1,25 +1,25 @@
-def anti_vowel(text):
+def removeVowels(text):
   vowels = 'aeiouAEIOU'
   for x in vowels:
     text = text.replace(x, '')
   return (text)
 
 
-print(anti_vowel('AbeCadlo'))
+print(removeVowels('AbeCadlo'))
 
 
-def anti_vowel(text):
+def removeVowels(text):
   for x in text:
     if x in ('aeiou') or x in ('AEIOU') :
       text = text.replace(x, '')
   return (text)
 
 
-print(anti_vowel('AbeCadlo'))
+print(removeVowels('AbeCadlo'))
 
 
 
-def anti_vowel(characters):
+def removeVowels(characters):
   vow = 'aeiouAEIOU'
   for evrchar in vow:
     if evrchar in characters:
@@ -27,9 +27,9 @@ def anti_vowel(characters):
   return characters
 
 
-print(anti_vowel('hkfsOEgiobmlaE'))
+print(removeVowels('hkfsOEgiobmlaE'))
 
-def anti_vowel(text):
+def removeVowels(text):
   vowelsVar = '' 
   for char in text:
     if char in ('aeiouAEIOU'):
@@ -39,31 +39,31 @@ def anti_vowel(text):
   return text
 
 
-print(anti_vowel('gfdoELOAxhU'))
+print(removeVowels('gfdoELOAxhU'))
 
-def anti_vowel(text):
+def removeVowels(text):
   return text.replace('a', '').replace('e', '').replace('i', '').replace('o', '').replace('u', '').replace('A', '').replace('E', '').replace('I', '').replace('O', '').replace('U', '')
 
 
-print(anti_vowel('fsdfoEAffoi'))
+print(removeVowels('fsdfoEAffoi'))
 
-def anti_vowel(text):
+def removeVowels(text):
   return ''.join(char for char in text if char not in ('aeiouAEIOU'))
 
-print(anti_vowel('fsnjkoAEObjsfdoO'))
+print(removeVowels('fsnjkoAEObjsfdoO'))
 
 
-def returnVowels(text):
+def returnOnlyVowels(text):
   return ''.join(char for char in text if char in ('aeiouAEIOU'))
 
-print(returnVowels('fsnjkoAEObjsfdoO'))
+print(returnOnlyVowels('fsnjkoAEObjsfdoO'))
 
 
-def anti_vowel(text):
+def removeVowelsFromTextCopy(text):
   result = list(text)
   for l in text:
     if l in "AEIOUaeiou":
       result.remove(l)
   return ''.join(result)
   
-print(anti_vowel("ecureuil"))
+print(removeVowelsFromTextCopy("ecureuil"))

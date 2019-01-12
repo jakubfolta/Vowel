@@ -39,7 +39,15 @@ def anty_vowel(text):
 print(anty_vowel('abeCEDOUikglto'))
 
 
+def removeVowels(characters):
+  vow = 'aeiouAEIOU'
+  for evrchar in vow:
+    if evrchar in characters:
+      characters = characters.replace(evrchar, ' ')
+  return characters
 
+
+print(removeVowels('hkfsOgfRYEgiobmlaE'))
 
 
 def removeVowels(text):

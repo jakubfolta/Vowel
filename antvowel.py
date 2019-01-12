@@ -37,3 +37,19 @@ def anty_vowel(text):
   return ''.join(char for char in text if char not in ('aeiouAEIOU'))
 
 print(anty_vowel('abeCEDOUikglto'))
+
+
+
+
+
+def removeVowels(text):
+  for x in text:
+    if x in ('aeiou') or x in ('AEIOU') :
+      text = text.replace(x, '')
+  return (text)
+
+
+print(removeVowels('AbehtyCadlo'))
+
+
+

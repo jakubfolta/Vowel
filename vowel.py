@@ -85,6 +85,10 @@ def displayOnlyConsonants(text):
 print(displayOnlyConsonants('snjkoAEObjsfdoOfsnjkoAEObjs'))
 
 
+def displayOnlyVowels(text):
+  return ''.join(x for x in text if x in 'aeiouAEIOU')
+
+print(displayOnlyVowels('snjkoAEObjsfdoOfsnjkoAEObjs'))
 
 
 

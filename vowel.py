@@ -79,6 +79,10 @@ def removeVowelsFromCopy(text):
 print(removeVowelsFromCopy('fsnjkoAEObjsfdoOfsnjkoAEObjsfdoO'))
 
 
+def displayOnlyVowels(text):
+  return
+
+
 
 
 

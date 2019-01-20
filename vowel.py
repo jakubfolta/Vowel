@@ -67,3 +67,25 @@ def removeVowelsFromTextCopy(text):
   return ''.join(result)
   
 print(removeVowelsFromTextCopy("ecureuil"))
+
+
+def removeVowelsFromCopy(text):
+  textCopy = list(text)
+  for x in text:
+    if x in 'aeiouAEIOU':
+      textCopy.remove(x)
+  return ''.join(textCopy)
+
+print(removeVowelsFromCopy('fsnjkoAEObjsfdoOfsnjkoAEObjsfdoO'))
+
+
+
+
+
+
+
+
+
+
+
+

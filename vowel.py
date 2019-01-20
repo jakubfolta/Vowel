@@ -79,8 +79,10 @@ def removeVowelsFromCopy(text):
 print(removeVowelsFromCopy('fsnjkoAEObjsfdoOfsnjkoAEObjsfdoO'))
 
 
-def displayOnlyVowels(text):
-  return
+def displayOnlyConsonants(text):
+  return ''.join(x for x in text if x not in 'aeiouAEIOU')
+
+print(displayOnlyConsonants('snjkoAEObjsfdoOfsnjkoAEObjs'))
 
 
 

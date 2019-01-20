@@ -90,6 +90,15 @@ def displayOnlyVowels(text):
 
 print(displayOnlyVowels('snjkoAEObjsfdoOfsnjkoAEObjs'))
 
+def selectOnlyVowelsFromText(text):
+  vowelsWord = ''
+  for x in text:
+    if x in 'aeiouAEIOU':
+      vowelsWord += x
+  return vowelsWord
+
+print(selectOnlyVowelsFromText('ankoendWEOJSFJWOdjksd'))
+
 
 
 

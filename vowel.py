@@ -18,12 +18,22 @@ def removeVowels(text):
 print(removeVowels('AbeCadlo'))
 
 
+def removeVowels(text):
+  sameText = list(text)
+  for x in text:
+    if x in 'aeiouAEIOU':
+      sameText.remove(x)
+  return ''.join(sameText)
+
+print(removeVowels('fsnjkoAEObjsfdoO'))
+    
+
 
 def removeVowels(characters):
   vow = 'aeiouAEIOU'
   for evrchar in vow:
     if evrchar in characters:
-      characters = characters.replace(evrchar, ' ')
+      characters = characters.replace(evrchar, '')
   return characters
 
 
